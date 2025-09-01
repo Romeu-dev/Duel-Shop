@@ -1,0 +1,119 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  position: relative; 
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-right: 5px;
+}
+
+.search-container .search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a,
+.user-actions a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover,
+.user-actions a:hover {
+  color: tomato;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-icon {
+  font-size: 1.3rem; 
+}
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 1.5rem;
+    
+    position: absolute;
+    top: 65px; 
+    right: 1.5rem;
+    width: 250px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .nav-content.active {
+    display: flex;
+  }
+
+  .menu, .user-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .search-container {
+      width: 100%; 
+  }
+  .toggle {
+    display: block;
+  }
+}
