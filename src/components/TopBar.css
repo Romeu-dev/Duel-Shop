@@ -1,0 +1,9 @@
+.top-bar {
+    background-color: tomato;   
+    color: black;                  
+    font-size: 0.9rem;            
+    padding: 3px;         
+    text-align: center;
+    cursor: pointer;
+
+  }

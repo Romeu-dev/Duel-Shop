@@ -1,0 +1,38 @@
+.banner2{
+ cursor: pointer;
+ margin-bottom: 30px;
+}
+.banner2 img{
+display: block;
+margin: auto;
+max-width: 100%;
+}
+        
+@media (max-width: 600px){
+    .banner2 img{
+     display: block;
+     margin: auto;
+     max-width: 100%;
+ }
+  }
+@media (max-width: 768px){
+    .banner2 img{
+        display: block;
+        margin: auto;
+        max-width: 100%;
+ }
+   }
+@media (max-width: 992px){
+    .banner2 img{
+      display: block;
+      margin: auto;
+      max-width: 100%;
+ }
+  }
+@media (max-width: 1200px){
+    .banner2 img{
+     display: block;
+     margin: auto;
+     max-width: 100%;
+ }
+  }
